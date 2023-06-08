@@ -1,0 +1,15 @@
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\obj\Debug\net7.0\lab_work_28.csproj.AssemblyReference.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\obj\Debug\net7.0\lab_work_28.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\obj\Debug\net7.0\lab_work_28.AssemblyInfoInputs.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\obj\Debug\net7.0\lab_work_28.AssemblyInfo.cs
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\obj\Debug\net7.0\lab_work_28.csproj.CoreCompileInputs.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\bin\Debug\net7.0\lab_work_28.exe
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\bin\Debug\net7.0\lab_work_28.deps.json
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\bin\Debug\net7.0\lab_work_28.runtimeconfig.json
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\bin\Debug\net7.0\lab_work_28.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\bin\Debug\net7.0\lab_work_28.pdb
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\obj\Debug\net7.0\lab_work_28.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\obj\Debug\net7.0\refint\lab_work_28.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\obj\Debug\net7.0\lab_work_28.pdb
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\obj\Debug\net7.0\lab_work_28.genruntimeconfig.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_28\lab_work_28\obj\Debug\net7.0\ref\lab_work_28.dll
