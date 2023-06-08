@@ -1,0 +1,15 @@
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\obj\Debug\net7.0\home_work26.csproj.AssemblyReference.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\obj\Debug\net7.0\home_work26.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\obj\Debug\net7.0\home_work26.AssemblyInfoInputs.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\obj\Debug\net7.0\home_work26.AssemblyInfo.cs
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\obj\Debug\net7.0\home_work26.csproj.CoreCompileInputs.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\bin\Debug\net7.0\home_work26.exe
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\bin\Debug\net7.0\home_work26.deps.json
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\bin\Debug\net7.0\home_work26.runtimeconfig.json
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\bin\Debug\net7.0\home_work26.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\bin\Debug\net7.0\home_work26.pdb
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\obj\Debug\net7.0\home_work26.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\obj\Debug\net7.0\refint\home_work26.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\obj\Debug\net7.0\home_work26.pdb
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\obj\Debug\net7.0\home_work26.genruntimeconfig.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_26\home_work26\obj\Debug\net7.0\ref\home_work26.dll
