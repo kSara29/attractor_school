@@ -1,0 +1,15 @@
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\bin\Debug\net7.0\'hw_25'.exe
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\bin\Debug\net7.0\'hw_25'.deps.json
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\bin\Debug\net7.0\'hw_25'.runtimeconfig.json
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\bin\Debug\net7.0\'hw_25'.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\bin\Debug\net7.0\'hw_25'.pdb
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\obj\Debug\net7.0\'hw_25'.csproj.AssemblyReference.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\obj\Debug\net7.0\'hw_25'.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\obj\Debug\net7.0\'hw_25'.AssemblyInfoInputs.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\obj\Debug\net7.0\'hw_25'.AssemblyInfo.cs
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\obj\Debug\net7.0\'hw_25'.csproj.CoreCompileInputs.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\obj\Debug\net7.0\'hw_25'.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\obj\Debug\net7.0\refint\'hw_25'.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\obj\Debug\net7.0\'hw_25'.pdb
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\obj\Debug\net7.0\'hw_25'.genruntimeconfig.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor\lesson_25\'hw_25'\obj\Debug\net7.0\ref\'hw_25'.dll
