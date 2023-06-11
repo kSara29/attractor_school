@@ -1,8 +1,0 @@
-
-wine
-tea
-beer
-whiskey
-brandy
-coffee
-dancing
