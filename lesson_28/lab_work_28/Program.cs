@@ -18,32 +18,32 @@
 
             Console.Write("Укажите уровень сложности:");
             int gameLevel = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"У вас есть {counter} попыток");
-
-            encryptedWord = SetGameLevel(gameLevel, randomGameWord, encryptedWord);
+            
+            encryptedWord = SetGameLevel(gameLevel, randomGameWord, encryptedWord, tries);
             
             while(game)
             {
-                tries ++;
-                Console.WriteLine('\n' + encryptedWord);
-                Console.Write("Введите букву: ");
-                string enteredLetter = Console.ReadLine();
-
-                encryptedWord = DecodingWord(encryptedWord, randomGameWord, enteredLetter);
-
-                if(encryptedWord == randomGameWord)
-                {
-                    game = false;
-                    Console.WriteLine($"You win! The word was '{randomGameWord}'. You won in {tries} tries.");
-                    File.AppendAllText(playedPath, randomGameWord + '\n');
-                } 
-
                 if(counter == 0)
                 {
                     Console.WriteLine($"No, there is no such letter in this word. Your number of tries left: {counter}");
                     Console.WriteLine($"Game over! The word was '{randomGameWord}'");
                     File.AppendAllText(playedPath, randomGameWord + '\n');
                     game = false;
+                    break;
+                }
+
+                tries ++;
+                Console.WriteLine('\n' + encryptedWord);
+                Console.Write("Введите букву: ");
+                string enteredLetter = Console.ReadLine();
+                Console.WriteLine($"У вас есть {counter - 1} попыток");
+                encryptedWord = DecodingWord(encryptedWord, randomGameWord, enteredLetter, tries);
+
+                if(encryptedWord == randomGameWord)
+                {
+                    game = false;
+                    Console.WriteLine($"\nYou win! The word was '{randomGameWord}'. You won in {tries} tries.");
+                    File.AppendAllText(playedPath, randomGameWord + '\n');
                 }
 
                 counter --;
@@ -58,15 +58,24 @@
             return encryptedWord;
         }
 
-        static string DecodingWord(string encryptedWord, string gameWord, string userLetter)
+        static string DecodingWord(string encryptedWord, string gameWord, string userLetter, int tries)
         {
+            int counter = 0;
             if(gameWord.ToUpper() == userLetter.ToUpper()) return userLetter;
             else
             {
                 for(int i = 0; i < gameWord.Length; i++)
                 {
-                    if(userLetter.ToUpper() == gameWord[i].ToString().ToUpper()) 
+                    if(userLetter.ToUpper() == gameWord[i].ToString().ToUpper())
+                    {
                         encryptedWord = encryptedWord.Substring(0, i) + gameWord[i].ToString() + encryptedWord.Substring(i + 1);
+                        counter ++;
+                    }
+                    else if(userLetter.ToUpper() != gameWord[i].ToString().ToUpper() && i == gameWord.Length - 1 && counter == 0)
+                    {
+                        DrawHangman(gameWord.Length + 5, tries);
+                        break;
+                    }
                 }
                 return encryptedWord;
             }
@@ -102,7 +111,7 @@
             return gameWords;
         }
 
-        static string SetGameLevel(int level, string gameWord, string encryptedWord)
+        static string SetGameLevel(int level, string gameWord, string encryptedWord, int tries)
         {
             Random rand = new Random();
             List<int> indexPosition = new List<int>();
@@ -116,7 +125,7 @@
                         if(!indexPosition.Contains(randomIndexOfLetter))
                         {
                             indexPosition.Add(randomIndexOfLetter);
-                            encryptedWord = DecodingWord(encryptedWord, gameWord, gameWord[randomIndexOfLetter].ToString());
+                            encryptedWord = DecodingWord(encryptedWord, gameWord, gameWord[randomIndexOfLetter].ToString(), tries);
                         }
                     }
                     break;
@@ -127,7 +136,7 @@
                         if(!indexPosition.Contains(randomIndexOfLetter))
                         {
                             indexPosition.Add(randomIndexOfLetter);
-                            encryptedWord = DecodingWord(encryptedWord, gameWord, gameWord[randomIndexOfLetter].ToString());
+                            encryptedWord = DecodingWord(encryptedWord, gameWord, gameWord[randomIndexOfLetter].ToString(), tries);
                         }
                     }
                     break;
@@ -138,7 +147,7 @@
                         if(!indexPosition.Contains(randomIndexOfLetter))
                         {
                             indexPosition.Add(randomIndexOfLetter);
-                            encryptedWord = DecodingWord(encryptedWord, gameWord, gameWord[randomIndexOfLetter].ToString());
+                            encryptedWord = DecodingWord(encryptedWord, gameWord, gameWord[randomIndexOfLetter].ToString(), tries);
                         }
                     }
                     break;
@@ -147,6 +156,310 @@
             }
             
             return encryptedWord;
+        }
+
+        static void DrawHangman(int totalTriels, int userTries)
+        {
+            switch(totalTriels)
+            {
+                case(8):
+                    switch(userTries)
+                    {
+                        case(1): Console.WriteLine("\n" + "|\\_____");
+                            break;
+                        case(2): Console.WriteLine("\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(3): Console.WriteLine("\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(4): Console.WriteLine("\n" + " _" + "\n" + "|/" + "\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(5): Console.WriteLine(
+@"
+_______
+|/      |
+|
+|
+|
+|
+|\______
+");
+                            break;
+                        case(6): Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|
+|
+|
+|\______
+");
+                            break;
+                        case(7): Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|      /0\
+|
+|
+|\______
+");
+                            break;
+                        case(8): Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|      /0\
+|      / \
+|
+|\______
+");
+                            break;
+                    }
+                    break;
+                
+                case(9):
+                    switch(userTries)
+                    {
+                        case(1): 
+                            Console.WriteLine("\n" + "|\\_____");
+                            break;
+                        case(2): Console.WriteLine("\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(3): Console.WriteLine("\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(4): Console.WriteLine("\n" + " _" + "\n" + "|/" + "\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(5): Console.WriteLine(
+@"
+_______
+|/      
+|
+|
+|
+|
+|\______
+");
+                            break;
+                        case(6): Console.WriteLine(
+@"
+_______
+|/      |
+|       
+|
+|
+|
+|\______
+");
+                            break;
+                        case(7): Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|      
+|
+|
+|\______
+");
+                            break;
+                        case(8): 
+                        Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|      /0\
+|      
+|
+|\______
+");
+                            break;
+                        case(9): 
+                        Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|      /0\
+|      / \
+|
+|\______
+");
+                            break;
+                    }
+                    break;
+
+                case(11):
+                    switch(userTries)
+                    {
+                        case(1): 
+                            Console.WriteLine("\n" + "|\\_____");
+                            break;
+                        case(2): Console.WriteLine("\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(3): Console.WriteLine("\n" + "|" + "\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(4): Console.WriteLine("\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(5): Console.WriteLine("\n" + "|" + "\n"  + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(6): Console.WriteLine("\n" + "|/" + "\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(7): Console.WriteLine(
+@"
+_______
+|/      
+|       
+|      
+|
+|
+|\______
+");
+                            break;
+                        case(8): 
+                        Console.WriteLine(
+@"
+_______
+|/      |
+|      
+|      
+|      
+|
+|\______
+");
+                            break;
+                        case(9): 
+                        Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|      
+|      
+|
+|\______
+");
+                            break;
+                        case(10): 
+                        Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|      /0\
+|      
+|
+|\______
+");
+                            break;  
+                        case(11): 
+                        Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|      /0\
+|      / \
+|
+|\______
+");
+                            break;                                                      
+                    }
+                    break;  
+
+                case(12):
+                    switch(userTries)
+                    {
+                        case(1): 
+                            Console.WriteLine("\n" + "|\\_____");
+                            break;
+                        case(2): Console.WriteLine("\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(3): Console.WriteLine("\n" + "|" + "\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(4): Console.WriteLine("\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(5): Console.WriteLine("\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(6): Console.WriteLine("\n" + "|/" + "\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|" + "\n" + "|\\_____");
+                            break;
+                        case(7): Console.WriteLine(
+@"
+_______
+|/      
+|       
+|      
+|
+|
+|\______
+");
+                            break;
+                        case(8): 
+                        Console.WriteLine(
+@"
+_______
+|/      |
+|      
+|      
+|      
+|
+|\______
+");
+                            break;
+                        case(9): 
+                        Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|      
+|      
+|
+|\______
+");
+                            break;
+                        case(10): 
+                        Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|      /0\
+|      
+|
+|\______
+");
+                            break;  
+                        case(11): 
+                        Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|      /0\
+|      / 
+|
+|\______
+");
+                            break;    
+                        case(12): 
+                        Console.WriteLine(
+@"
+_______
+|/      |
+|       O
+|      /0\
+|      / \
+|
+|\______
+");
+                            break; 
+                    }
+                    break;              
+            } 
         }
     }
 }
