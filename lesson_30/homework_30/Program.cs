@@ -15,7 +15,6 @@
             Console.WriteLine("\nBonus task");
             Console.WriteLine(ser);
         }
-
     } 
 }
 
