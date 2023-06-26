@@ -1,0 +1,17 @@
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\bin\Debug\net7.0\lab_work_31.exe
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\bin\Debug\net7.0\lab_work_31.deps.json
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\bin\Debug\net7.0\lab_work_31.runtimeconfig.json
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\bin\Debug\net7.0\lab_work_31.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\bin\Debug\net7.0\lab_work_31.pdb
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\obj\Debug\net7.0\lab_work_31.csproj.AssemblyReference.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\obj\Debug\net7.0\lab_work_31.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\obj\Debug\net7.0\lab_work_31.AssemblyInfoInputs.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\obj\Debug\net7.0\lab_work_31.AssemblyInfo.cs
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\obj\Debug\net7.0\lab_work_31.csproj.CoreCompileInputs.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\obj\Debug\net7.0\lab_work_31.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\obj\Debug\net7.0\refint\lab_work_31.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\obj\Debug\net7.0\lab_work_31.pdb
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\obj\Debug\net7.0\lab_work_31.genruntimeconfig.cache
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\obj\Debug\net7.0\ref\lab_work_31.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\kuand\OneDrive\Рабочий стол\study\attractor_school\lesson_31\lab_work_31\obj\Debug\net7.0\lab_work_31.csproj.CopyComplete

@@ -1,0 +1,57 @@
+[
+  {
+    "Name": "Pepsi",
+    "Age": 4,
+    "Satiety": 46,
+    "Mood": 68,
+    "Health": 24,
+    "AvgLevel": 46,
+    "IsCatAction": false,
+    "ActionsType": 1,
+    "Strategy": "ChildCat"
+  },
+  {
+    "Name": "Felix",
+    "Age": 17,
+    "Satiety": 46,
+    "Mood": 60,
+    "Health": 43,
+    "AvgLevel": 49,
+    "IsCatAction": true,
+    "ActionsType": 0,
+    "Strategy": "OldCat"
+  },
+  {
+    "Name": "Kuro",
+    "Age": 1,
+    "Satiety": 67,
+    "Mood": 43,
+    "Health": 63,
+    "AvgLevel": 57,
+    "IsCatAction": true,
+    "ActionsType": 0,
+    "Strategy": "ChildCat"
+  },
+  {
+    "Name": "Cola",
+    "Age": 8,
+    "Satiety": 48,
+    "Mood": 38,
+    "Health": 35,
+    "AvgLevel": 40,
+    "IsCatAction": false,
+    "ActionsType": 0,
+    "Strategy": "AdultCat"
+  },
+  {
+    "Name": "Barsik",
+    "Age": 10,
+    "Satiety": 17,
+    "Mood": 4,
+    "Health": 11,
+    "AvgLevel": 10,
+    "IsCatAction": true,
+    "ActionsType": 1,
+    "Strategy": "AdultCat"
+  }
+]

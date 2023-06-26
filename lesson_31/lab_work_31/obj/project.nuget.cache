@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RUQTo0cMZC0+cSuXkVpbkBee1xN7KeXe+u/pQ6Zapua0q/To+RG5t9qnRrRxuS+73BnKzVtcZC6SGuIxInkd6w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kuand\\OneDrive\\Рабочий стол\\study\\attractor_school\\lesson_31\\lab_work_31\\lab_work_31.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kuand\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
